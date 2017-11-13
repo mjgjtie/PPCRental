@@ -185,6 +185,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\apartment-1.jpg" />
+    <Content Include="Images\apartment-2.jpg" />
     <Content Include="Images\phongkhach-1.jpg" />
     <Content Include="Images\phongkhach-2.jpg" />
     <Content Include="Images\phongkhach-3.jpg" />
@@ -195,6 +197,8 @@
     <Content Include="Images\phongngu-2.jpg" />
     <Content Include="Images\phongngu-3.jpg" />
     <Content Include="Images\phongngu-4.jpg" />
+    <Content Include="Images\PPCRentalLogo.png" />
+    <Content Include="Images\villa-1.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\Model1.edmx">
