@@ -1,0 +1,41 @@
+﻿@model IEnumerable<PPCRental.Models.PROPERTY>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<link href="~/Content/carousel.css" rel="stylesheet" />
+<link href="~/Content/index.css" rel="stylesheet" />
+
+<br />
+<br />
+
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <
+                
+                <img data-src="~/Images/@item.Images" alt="@item.PropertyName" />
+                <div class="caption">
+                <h3>@item.PropertyName</h3>
+                <p>@item.Content.Substring(0,50)...</p>
+                <p>Price: @item.Price</p>
+                <p><a href="/Product/Detail/@item.ID" class="btn btn-primary" role="button"> Xem tiếp </a></p>
+                </div>
+            </div>
+        <!--
+        Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+        Html.ActionLink("Details", "Details", new { id=item.ID }) |
+        Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        -->
+
+   
+        </div>
+
+    }
+</div>
