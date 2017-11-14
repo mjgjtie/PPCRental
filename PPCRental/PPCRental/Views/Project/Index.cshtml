@@ -18,14 +18,12 @@
     {
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <
-                
-                <img data-src="~/Images/@item.Images" alt="@item.PropertyName" />
+                <img src="~/Images/@item.Avatar" alt="@item.Avatar" />
                 <div class="caption">
                 <h3>@item.PropertyName</h3>
                 <p>@item.Content.Substring(0,50)...</p>
                 <p>Price: @item.Price</p>
-                <p><a href="/Product/Detail/@item.ID" class="btn btn-primary" role="button"> Xem tiếp </a></p>
+                <p><a href="/Project/Details/@item.ID" class="btn btn-primary" role="button"> Xem tiếp </a></p>
                 </div>
             </div>
         <!--

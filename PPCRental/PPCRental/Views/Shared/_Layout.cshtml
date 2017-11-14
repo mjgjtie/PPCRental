@@ -1,25 +1,28 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PPC Rental</title>
     
+    <link href="~/Content/index.css" rel="stylesheet" />
+    <link href="~/Content/carousel.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
           @Styles.Render("~/Content/css")
-          @Scripts.Render("~/bundles/modernizr")></head>
+          @Scripts.Render("~/bundles/modernizr")
+</head>
 <body>
+
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark " style="font-size:1.5rem">
         <a class="navbar-brand" href="#" style="font-size:2rem">Carousel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse "  id="navbarCollapse" >
+        <div class="collapse navbar-collapse"  id="navbarCollapse" >
             <ul class="navbar-nav ml-auto" >
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home </a>
-                </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="@Html.ActionLink("Home","Index","Project")">Listing</a>
+                    <a class="nav-link" href="#">Listing</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" >View List of Agency Project</a>
@@ -44,5 +47,11 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script src="~/Scripts/slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="~/Scripts/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="~/Scripts/holder.min.js"></script>
 </body>
 </html>

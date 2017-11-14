@@ -4,184 +4,192 @@
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<head>
+    <title>@Html.DisplayFor(model => model.PropertyName)</title>
+</head>
+<body>
+    <div class="container">
 
-<h2>Details</h2>
+        <h3>@Html.DisplayFor(model => model.PropertyName)</h3>
+        <dl class="dl-horizontal">
+            
+            <dt>
+                @Html.DisplayNameFor(model => model.Updated_at)
+            </dt>
 
-<div>
-    <h4>PROPERTY</h4>
-	<hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.PropertyName)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Updated_at).ToString().Substring(0,10)
+            </dd>
+            
+            </dl>
+            <hr />
+            <dl class="dl-horizontal">
+                
+                <dt style="height:200px">
+                    <img src="~/Images/@Html.DisplayFor(model => model.Avatar)">
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PropertyName)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Avatar)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Avatar)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Images)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Avatar)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Images)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Images)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Content)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Images)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Content)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.UnitPrice)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.UnitPrice)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.UnitPrice)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Area)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.UnitPrice)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Area)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Area)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.BedRoom)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Area)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.BedRoom)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BedRoom)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.BathRoom)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.BedRoom)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.BathRoom)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BathRoom)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.PackingPlace)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.BathRoom)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.PackingPlace)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PackingPlace)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Created_at)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PackingPlace)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Created_at)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Created_at)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Create_post)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Created_at)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Create_post)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Create_post)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Note)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Create_post)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Note)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Note)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Updated_at)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Note)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Updated_at)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Updated_at)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.DISTRICT.DistrictName)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Updated_at)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.DISTRICT.DistrictName)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DISTRICT.DistrictName)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.PROJECT_STATUS.Status_Name)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DISTRICT.DistrictName)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.PROJECT_STATUS.Status_Name)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PROJECT_STATUS.Status_Name)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.PROPERTY_TYPE.CodeType)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PROJECT_STATUS.Status_Name)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.PROPERTY_TYPE.CodeType)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PROPERTY_TYPE.CodeType)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.STREET.StreetName)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PROPERTY_TYPE.CodeType)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.STREET.StreetName)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.STREET.StreetName)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.USER.Email)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.STREET.StreetName)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.USER.Email)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.USER.Email)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.USER1.Email)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.USER.Email)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.USER1.Email)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.USER1.Email)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.WARD.WardName)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.USER1.Email)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.WARD.WardName)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.WARD.WardName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.WARD.WardName)
-        </dd>
-
-    </dl>
+            </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+
+</body>
